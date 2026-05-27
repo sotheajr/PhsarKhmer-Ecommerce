@@ -1,0 +1,23 @@
+.product-gallery {
+  width: 350px;
+}
+.main-image img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.thumbnails {
+  display: flex;
+  gap: 0.5rem;
+}
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.thumbnails img.active {
+  border: 2px solid #1abc9c;
+}

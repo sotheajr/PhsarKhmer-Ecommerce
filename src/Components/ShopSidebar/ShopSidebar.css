@@ -1,0 +1,51 @@
+.shop-sidebar {
+  font-family: inherit;
+  background-color: #ffffff; /* បង្ខំឲ្យ Background ពណ៌សជានិច្ច */
+  color: #1f2937; /* បង្ខំឲ្យអក្សរចេញពណ៌ប្រផេះចាស់/ខ្មៅ មិនឲ្យចេញពណ៌សទេ */
+  padding: 1rem;
+}
+
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827; /* ពណ៌ក្បាលផ្នែកឲ្យច្បាស់ */
+  margin-bottom: 0.8rem;
+}
+
+/* រៀបចំកន្លែង Checkbox ឲ្យមានគម្លាតស្អាត និងងាយស្រួលចុច */
+.sidebar-section div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-section label {
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.rating-row span {
+  color: #ffb400;
+  font-size: 1.1rem;
+}
+
+.reset-btn {
+  margin-top: 0.5rem;
+  background: #f3f4f6;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #1f2937;
+}
+
+.reset-btn:hover {
+  background: #e5e7eb;
+}

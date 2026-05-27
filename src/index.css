@@ -1,0 +1,232 @@
+/* tailwind css  */
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* google font inter  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Kantumruuy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-khmer: "Kantumruuy Pro", "Battambang", sans-serif;
+}
+
+@import "tailwindcss";
+
+/* 4. កំណត់ឱ្យ Website ទាំងមូលប្រើ Font នេះជាលំនាំដើម */
+body {
+  font-family: "Kantumruuy Pro", "Battambang", sans-serif;
+}
+.banner_slide_item {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.banner_image {
+  position: relative;
+  z-index: 2;
+}
+
+.banner_image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 747px;
+  width: 100%;
+  min-height: 747px;
+  height: 100%;
+  background-color: #e1e3e5;
+  border-radius: 100%;
+  z-index: -1;
+}
+.banner_slide_item {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.5rem;
+
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+
+  padding: 0 80px; /* 👉 បន្ថែម space ខាងឆ្វេង ដើម្បី push ទៅស្តាំ */
+  min-height: 100vh;
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.banner_text {
+  flex: 1;
+  padding-left: 60px; /* 👉 អក្សរខិតចូលពីឆ្វេង */
+}
+
+.banner_text h1 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+
+.banner_image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* 👉 រូបទៅខាងស្តាំ */
+  position: relative;
+}
+
+/* CIRCLE */
+.banner_image::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  right: 0; /* 👉 move circle to right */
+  transform: translateY(-50%);
+
+  width: 600px;
+  height: 600px;
+
+  background: #e1e3e5;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* IMAGE SIZE */
+.banner_image img {
+  width: 80%;
+  max-width: 420px;
+}
+
+/* ========================= */
+/* SLIDER FIX (if using slick/swiper) */
+/* ========================= */
+
+.slick-slide {
+  display: flex !important;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .banner_slide_item {
+    gap: 3rem;
+  }
+
+  .banner_text h1 {
+    font-size: 42px;
+  }
+
+  .banner_image::before {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner_slide_item {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .banner_text h1 {
+    font-size: 32px;
+  }
+
+  .banner_image::before {
+    width: 320px;
+    height: 320px;
+  }
+}
+.slider_container > .slick-slider > .slick-prev,
+.slider_container > .slick-slider > .slick-next {
+  z-index: 5 !important;
+}
+
+.slick-prev {
+  left: -95px !important;
+}
+
+.slick-next {
+  right: -95px !important;
+}
+
+.slider_container > .slick-slider > .slick-prev:before,
+.slider_container > .slick-slider > .slick-next:before {
+  font-family: "slick";
+  font-size: 52px !important;
+  line-height: 1;
+  opacity: 0.75;
+  color: #007580 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slider_container > .slick-slider > .slick-dots {
+  position: absolute;
+  bottom: 100px !important;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slider_container > .slick-slider > .slick-dots li button:before {
+  font-family: "slick";
+  font-size: 22px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slider_container
+  > .slick-slider
+  > .slick-dots
+  > li.slick-active
+  button:before {
+  color: #007580 !important;
+}
+
+.delivery_component {
+  margin-top: -4rem;
+  position: relative;
+  z-index: 5;
+}
+
+.features_slider > .slick-slider > .slick-prev:before,
+.features_slider > .slick-slider > .slick-next:before {
+  font-size: 39px !important;
+  color: #007580;
+}
+
+.client_say_description {
+  position: relative;
+}
+.client_say_description::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -27px;
+  width: 3px;
+  height: 100%;
+  background-color: #007580;
+}

@@ -1,0 +1,54 @@
+.product-detail-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #ffffff; /* ធានាផ្ទៃពណ៌ស */
+  color: #111827; /* ធានាអក្សរពណ៌ខ្មៅ/ប្រផេះចាស់ */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.product-detail-main {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: flex-start; /* ការពារកុំឱ្យ Stretch ទាញរាងខូចលើ Safari */
+}
+
+/* 🟢 បន្ថែមថ្មី៖ កំណត់ទំហំផ្នែករូបភាពឱ្យដាច់ស្រឡះ មិនឱ្យរីកធំទៅបាំងអក្សរ */
+.gallery-wrapper {
+  flex: 1;
+  min-width: 0; /* គន្លឹះសំខាន់បង្អាក់កុំឱ្យ Flex Item រីកហួសចំណុះលើ iOS */
+  max-width: 50%;
+}
+
+/* 🟢 បន្ថែមថ្មី៖ កំណត់ទំហំផ្នែកព័ត៌មានអក្សរទំនិញ */
+.info-wrapper {
+  flex: 1;
+  min-width: 0;
+  max-width: 50%;
+  word-wrap: break-word; /* បង្ខំឱ្យដាច់អក្សរចុះក្រោម បើវែងពេក មិនឱ្យធ្លាក់បាត់ */
+}
+
+/* ========================================== */
+/* ========== RESPONSIVE FOR MOBILE ========== */
+/* ========================================== */
+@media (max-width: 900px) {
+  .product-detail-container {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .product-detail-main {
+    flex-direction: column; /* ប្ដូរមកជាជួរឈរលើទូរសព្ទ */
+    gap: 1.5rem;
+  }
+
+  /* 🟢 នៅលើទូរសព្ទ (iOS) ត្រូវកំណត់ឱ្យទំហំរត់ពេញ ១០០% ទាំងរូបភាព និងអក្សរដើម្បីកុំឱ្យបុកគ្នា */
+  .gallery-wrapper,
+  .info-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+}

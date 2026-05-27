@@ -1,0 +1,174 @@
+/* src/Pages/Product/Product.css */
+
+.product-page {
+  width: 100%;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+.banner-section {
+  width: 100%;
+  overflow: hidden;
+}
+/* ========================= */
+/* Popular Section */
+/* ========================= */
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.popular-section {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.section-header p {
+  color: #6b7280;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.popular-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.popular-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.popular-image {
+  background: #f3f4f6;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-image img {
+  width: 80%;
+  object-fit: contain;
+  transition: 0.4s;
+}
+
+.popular-card:hover img {
+  transform: scale(1.05);
+}
+
+.popular-content {
+  padding: 20px;
+}
+
+.popular-content span {
+  color: #0ea5e9;
+  font-size: 14px;
+}
+
+.popular-content h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #111827;
+}
+
+.popular-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.popular-bottom h4 {
+  color: #0f172a;
+  font-size: 22px;
+}
+
+.popular-bottom button {
+  border: none;
+  background: #0ea5e9;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popular-bottom button:hover {
+  background: #0284c7;
+}
+
+/* ========================= */
+/* Sale Banner */
+/* ========================= */
+
+.sale-banner {
+  width: 90%;
+  margin: 50px auto;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  border-radius: 25px;
+  padding: 80px 40px;
+  color: white;
+  text-align: center;
+}
+
+.sale-content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.sale-content p {
+  width: 60%;
+  margin: auto;
+  line-height: 30px;
+  color: #d1d5db;
+}
+
+.sale-content button {
+  margin-top: 30px;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 12px;
+  background: #06b6d4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sale-content button:hover {
+  background: #0891b2;
+}
+
+@media (max-width: 768px) {
+  .sale-content h1 {
+    font-size: 32px;
+  }
+
+  .sale-content p {
+    width: 100%;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+}
