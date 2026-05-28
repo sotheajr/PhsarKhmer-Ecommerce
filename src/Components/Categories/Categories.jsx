@@ -4,10 +4,10 @@ import "slick-carousel/slick/slick-theme.css";
 import SectionTitle from "./../SectionTitle/SectionTitle";
 import { Link } from "react-router-dom";
 import { useTranslation } from "../../context/LanguageContext";
-import categoriesImg7 from "../../assets/categories/categories_1.png";
-import categoriesImg7 from "../../assets/categories/categories_2.png";
-import categoriesImg7 from "../../assets/categories/categories_3.png";
-import categoriesImg7 from "../../assets/categories/categories_4.png";
+import categoriesImg1 from "../../assets/categories/categories_1.png";
+import categoriesImg2 from "../../assets/categories/categories_2.png";
+import categoriesImg3 from "../../assets/categories/categories_3.png";
+import categoriesImg4 from "../../assets/categories/categories_4.png";
 
 const Categories = () => {
   const { t } = useTranslation();
