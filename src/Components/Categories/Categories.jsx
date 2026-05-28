@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick-theme.css";
 import SectionTitle from "./../SectionTitle/SectionTitle";
 import { Link } from "react-router-dom";
 import { useTranslation } from "../../context/LanguageContext";
+import categoriesImg7 from "../../assets/categories/categories_1.png";
+import categoriesImg7 from "../../assets/categories/categories_2.png";
+import categoriesImg7 from "../../assets/categories/categories_3.png";
+import categoriesImg7 from "../../assets/categories/categories_4.png";
 
 const Categories = () => {
   const { t } = useTranslation();
@@ -12,22 +16,22 @@ const Categories = () => {
     {
       titleKey: "categories.wingChair",
       count: 3584,
-      image: "/src/assets/categories/categories_1.png",
+      image: categoriesImg1,
     },
     {
       titleKey: "categories.woodenChair",
       count: 157,
-      image: "/src/assets/categories/categories_2.png",
+      image: categoriesImg2,
     },
     {
       titleKey: "categories.deskChair",
       count: 154,
-      image: "/src/assets/categories/categories_3.png",
+      image: categoriesImg3,
     },
     {
       titleKey: "categories.parkBench",
       count: 154,
-      image: "/src/assets/categories/categories_4.png",
+      image: categoriesImg4,
     },
   ];
 

@@ -7,7 +7,10 @@ import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
 import { useWishlist } from "../../context/WishlistContext";
 import { useTranslation } from "../../context/LanguageContext";
-
+import productsImgI from "../../assets/products/product_1.png";
+import productsImgII from "../../assets/products/product_2.png";
+import productsImgIII from "../../assets/products/product_3.png";
+import productsImgVI from "../../assets/products/product_5.png";
 const Recent = () => {
   const { addToCart } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
@@ -19,7 +22,7 @@ const Recent = () => {
       title: "library stool",
       statusKey: "features.statusNew",
       price: 250,
-      image: "/src/assets/features/product_1.png",
+      image: productsImgI,
       currentPrice: 200,
     },
     {
@@ -27,20 +30,20 @@ const Recent = () => {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: 250,
-      image: "/src/assets/features/product_2.png",
+      image: productsImgII,
     },
     {
       id: 3,
       title: "library stool Chair",
       price: 250,
-      image: "/src/assets/features/product_3.png",
+      image: productsImgIII,
     },
     {
       id: 4,
       title: "library stool Chair",
       statusKey: "features.statusNew",
       price: 250,
-      image: "/src/assets/features/product_4.png",
+      image: productsImgIV,
       currentPrice: 200,
     },
   ];

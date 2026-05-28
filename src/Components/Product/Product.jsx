@@ -5,7 +5,18 @@ import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
 import { useWishlist } from "../../context/WishlistContext";
 import { useTranslation } from "../../context/LanguageContext";
-
+import productsImg1 from "../../assets/products/product_1.png";
+import productsImg2 from "../../assets/products/product_2.png";
+import productsImg3 from "../../assets/products/product_3.png";
+import productsImg4 from "../../assets/products/product_4.png";
+import productsImg5 from "../../assets/products/product_5.png";
+import productsImg6 from "../../assets/products/product_6.png";
+import productsImg7 from "../../assets/products/product_7.png";
+import productsImg8 from "../../assets/products/product_8.png";
+import productsImgI from "../../assets/products/product_1.png";
+import productsImgII from "../../assets/products/product_2.png";
+import productsImgIII from "../../assets/products/product_3.png";
+import productsImgVI from "../../assets/products/product_5.png";
 const Product = () => {
   const { addToCart } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
@@ -28,7 +39,7 @@ const Product = () => {
       title: "library stool",
       statusKey: "features.statusNew",
       price: "$250",
-      image: "/src/assets/products/product_1.png",
+      image: productsImgI,
       currentPrice: "$200",
       product: "newest",
     },
@@ -36,14 +47,14 @@ const Product = () => {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: "$250",
-      image: "/src/assets/products/product_2.png",
+      image: productsImgII,
       product: "newest",
     },
     {
       title: "library stool",
       statusKey: "features.statusNew",
       price: "$250",
-      image: "/src/assets/products/product_3.png",
+      image: productsImgIII,
       currentPrice: "$200",
       product: "newest",
     },
@@ -51,21 +62,21 @@ const Product = () => {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: "$250",
-      image: "/src/assets/products/product_4.png",
+      image: productsImgIV,
       product: "newest",
     },
     {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: "$250",
-      image: "/src/assets/products/product_5.png",
+      image: productsImg1,
       product: "trending",
     },
     {
       title: "library stool",
       statusKey: "features.statusNew",
       price: "$250",
-      image: "/src/assets/products/product_6.png",
+      image: productsImg6,
       currentPrice: "$200",
       product: "trending",
     },
@@ -73,21 +84,21 @@ const Product = () => {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: "$250",
-      image: "/src/assets/products/product_7.png",
+      image: productsImg7,
       product: "trending",
     },
     {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: "$250",
-      image: "/src/assets/products/product_8.png",
+      image: productsImg8,
       product: "trending",
     },
     {
       title: "library stool",
       statusKey: "features.statusNew",
       price: "$250",
-      image: "/src/assets/products/product_1.png",
+      image: productsImg3,
       currentPrice: "$200",
       product: "best_seller",
     },
@@ -95,21 +106,21 @@ const Product = () => {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: "$250",
-      image: "/src/assets/products/product_2.png",
+      image: productsImg4,
       product: "best_seller",
     },
     {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: "$250",
-      image: "/src/assets/products/product_3.png",
+      image: productsImg2,
       product: "best_seller",
     },
     {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: "$250",
-      image: "/src/assets/products/product_5.png",
+      image: productsImg5,
       product: "best_seller",
     },
   ];

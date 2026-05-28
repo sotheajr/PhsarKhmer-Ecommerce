@@ -9,6 +9,10 @@ import styles from "./Features.module.css";
 import { useCart } from "../../context/CartContext";
 import { useWishlist } from "../../context/WishlistContext";
 import { useTranslation } from "../../context/LanguageContext";
+import featureImg1 from "../../assets/features/product_1.png";
+import featureImg2 from "../../assets/features/product_2.png";
+import featureImg3 from "../../assets/features/product_3.png";
+import featureImg4 from "../../assets/features/product_4.png";
 
 const Features = () => {
   const { addToCart } = useCart();
@@ -21,7 +25,7 @@ const Features = () => {
       title: "library stool",
       statusKey: "features.statusNew",
       price: 250,
-      image: "/src/assets/features/product_1.png",
+      image: featureImg1,
       currentPrice: 200,
     },
     {
@@ -29,20 +33,20 @@ const Features = () => {
       title: "library stool Chair",
       statusKey: "features.statusSales",
       price: 250,
-      image: "/src/assets/features/product_2.png",
+      image: featureImg2,
     },
     {
       id: 3,
       title: "library stool Chair",
       price: 250,
-      image: "/src/assets/features/product_3.png",
+      image: featureImg3,
     },
     {
       id: 4,
       title: "library stool Chair",
       statusKey: "features.statusNew",
       price: 250,
-      image: "/src/assets/features/product_4.png",
+      image: featureImg4,
       currentPrice: 200,
     },
   ];
