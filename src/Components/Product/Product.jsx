@@ -16,7 +16,7 @@ import productsImg8 from "../../assets/products/product_8.png";
 import productsImgI from "../../assets/products/product_1.png";
 import productsImgII from "../../assets/products/product_2.png";
 import productsImgIII from "../../assets/products/product_3.png";
-import productsImgB from "../../assets/products/product_4.png";
+
 const Product = () => {
   const { addToCart } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
@@ -87,13 +87,13 @@ const Product = () => {
       image: productsImg7,
       product: "trending",
     },
-    {
-      title: "library stool Chair",
-      statusKey: "features.statusSales",
-      price: "$250",
-      image: "/assets/products/product_4.png",
-      product: "trending",
-    },
+    // {
+    //   title: "library stool Chair",
+    //   statusKey: "features.statusSales",
+    //   price: "$250",
+    //   image: "/assets/products/product_4.png",
+    //   product: "trending",
+    // },
     {
       title: "library stool",
       statusKey: "features.statusNew",
