@@ -16,7 +16,7 @@ import productsImg8 from "../../assets/products/product_8.png";
 import productsImgI from "../../assets/products/product_1.png";
 import productsImgII from "../../assets/products/product_2.png";
 import productsImgIII from "../../assets/products/product_3.png";
-import productsImgVI from "../../assets/products/product_5.png";
+import productsImgIV from "../../assets/products/product_5.png";
 const Product = () => {
   const { addToCart } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
