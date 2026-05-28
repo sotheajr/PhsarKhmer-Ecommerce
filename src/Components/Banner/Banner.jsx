@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { MoveRight } from "lucide-react";
 import { useTranslation } from "../../context/LanguageContext";
+import bannerImg from "../../assets/Banner/banner_image.png";
 
 const Banner = () => {
   const { t } = useTranslation();
@@ -12,19 +13,19 @@ const Banner = () => {
       id: 1,
       titleKey: "banner.title",
       subTitleKey: "banner.subtitle",
-      image: "/src/assets/Banner/banner_image.png",
+      image: bannerImg,
     },
     {
       id: 2,
       titleKey: "banner.title",
       subTitleKey: "banner.subtitle",
-      image: "/src/assets/Banner/banner_image.png",
+      image: bannerImg,
     },
     {
       id: 3,
       titleKey: "banner.title",
       subTitleKey: "banner.subtitle",
-      image: "/src/assets/Banner/banner_image.png",
+      image: bannerImg,
     },
   ];
 
